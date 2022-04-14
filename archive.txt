@@ -1,0 +1,19 @@
+blob 
+: 
+https://bit.ly/3qCjXQs
+
+html/
+
+<img src="img" alt="" class="blob">
+
+css/
+
+.blob {
+	animation: blob-animation 5s alternate infinity;
+}
+
+@keyframe blob-animation {
+	100% {
+	filter: hue-rotate(360deg);
+}
+}

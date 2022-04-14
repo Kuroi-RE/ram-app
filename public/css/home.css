@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&display=swap");
+/* Import from W3scl */
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+:root {
+  --font-family: "Bebas Neue", sans-serif;
+  --font-descrip: "Itim", sans-serif;
+
+  --background-color: rgb(138, 43, 226);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container {
+  padding-top: 25vh;
+  text-align: center;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  text-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.isi-title {
+  font-family: var(--font-family);
+  display: block;
+  opacity: 0;
+  line-height: 40px;
+  animation: transX 0.5s forwards;
+}
+
+.content1 {
+  font-family: var(--font-descrip);
+  display: block;
+  opacity: 0;
+  animation: transX 0.5s forwards;
+}
+
+.content2 {
+  padding-top: 40vh;
+  height: 30vh;
+}
+
+.infor {
+  padding-top: 5%;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  animation: transY 0.5s forwards;
+}
+
+.button:hover {
+  color: rgb(138, 43, 226);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 1s;
+}
+
+.button:hover::before {
+  width: 150%;
+}
+
+/* Thit is footer */
+
+@keyframes transY {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes transX {
+  from {
+    transform: translateX(25px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes transZ {
+  from {
+    transform: translateZ(25px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    display: none;
+  }
+}
+@media screen and (max-height: 300px) {
+  * {
+    display: none;
+  }
+}
