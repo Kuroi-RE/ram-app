@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const secure = require("ssl-express-www");
+const PORT = procces.env.PORT || 4000;
+const host = "0.0.0.0";
 
 const route = require("./routes/routes");
 
@@ -18,8 +20,8 @@ app.use("*/img", express.static("public/img"));
 
 app.use("/", route);
 
-app.listen("5500", () => {
-  console.log("Server Running.");
+app.listen(PORT, host, () => {
+  console.log("Server Running at port " + PORT);
 });
 
 module.exports = app;
