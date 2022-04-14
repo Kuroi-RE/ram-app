@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const secure = require("ssl-express-www");
-const PORT = procces.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 const host = "0.0.0.0";
 
 const route = require("./routes/routes");
