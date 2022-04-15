@@ -5,15 +5,15 @@ var express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.sendFile(__path + "/views/home.html");
+  res.render("home/home");
 });
 
 router.get("/games", (req, res) => {
-  res.sendFile(__path + "/views/games.html");
+  res.render("home/games");
 });
 
 router.get("/sosial", (req, res) => {
-  res.sendFile(__path + "/views/sosial.html");
+  res.render("home/sosial");
 });
 
 // router.get("/api/message", (req, res) => {

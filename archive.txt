@@ -17,3 +17,9 @@ css/
 	filter: hue-rotate(360deg);
 }
 }
+
+> JUDUL
+> BANNER
+> WHY WLEE SHOP
+> NOMINAL DIAMOND
+> PEMBAYARAN & HARGA
