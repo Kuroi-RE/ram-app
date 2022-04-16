@@ -1,7 +1,68 @@
 <%- include("../components/head") %> <%- include("../components/navbar") %>
 <!-- Main content -->
-<h2 class="text-white py-3 mx-4">Project saat ini:</h2>
-<ul>
-    <li class="mx-3"><a href="/project/topup">TOPUP GAME</a></li>
-</ul>
-<%- include("../components/footer") %>
+<div class="py-4 container" style="height: 40vh">
+  <h2 class="text-white py-3 mx-4">Project saat ini:</h2>
+  <div>
+    <a href="/" class="mx-5 text-center" style="text-decoration: none"
+      >ACCOUNT PAGES</a
+    >
+    <p class="text-white">Progress:</p>
+    <div class="progress mx-5">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuenow="99"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 99%"
+      >
+        99%
+      </div>
+    </div>
+  </div>
+  <hr style="color: aqua" />
+  <div>
+    <a
+      href="/project/topup"
+      class="mx-5 text-center"
+      style="text-decoration: none"
+      >TOPUP GAME</a
+    >
+    <p class="text-white">Progress:</p>
+    <div class="progress mx-5">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuenow="10"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 10%"
+      >
+        10%
+      </div>
+    </div>
+  </div>
+  <hr style="color: aqua" />
+  <div>
+    <a
+      href="/project/games"
+      class="mx-5 text-center"
+      style="text-decoration: none"
+      >SIMPLE GAMES</a
+    >
+    <p class="text-white">Progress:</p>
+    <div class="progress mx-5">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuenow="10"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 2%"
+      >
+        1%
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fixed-bottom"><%- include("../components/footer") %></div>

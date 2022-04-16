@@ -7,6 +7,7 @@ const host = "0.0.0.0";
 
 const route = require("./routes/routes");
 const project = require("./routes/project");
+const api = require("./routes/api");
 
 var app = express();
 app.enable("trust proxy");
@@ -38,6 +39,7 @@ app.use("*/img", express.static("public/img"));
 // routes
 app.use("/", route);
 app.use("/project", project);
+app.use("/api", api);
 
 app.use("/", (req, res) => {
   res.status(404);
