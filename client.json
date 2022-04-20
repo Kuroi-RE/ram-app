@@ -1,0 +1,170 @@
+{
+  "bot": [
+    {
+      "client": {
+        "commands": [
+          {
+            "name": "add-premium",
+            "category": "Premium",
+            "aliases": [
+              "addprem"
+            ],
+            "description": "Premium account"
+          },
+          {
+            "name": "canvas",
+            "category": "None",
+            "aliases": [
+              "can"
+            ],
+            "description": "None"
+          },
+          {
+            "name": "join",
+            "category": "Developer",
+            "aliases": [
+              ""
+            ],
+            "description": "Joined channel"
+          },
+          {
+            "name": "leave",
+            "category": "Developer",
+            "aliases": [
+              ""
+            ],
+            "description": "Leave channel"
+          },
+          {
+            "name": "log",
+            "category": "",
+            "aliases": [
+              ""
+            ],
+            "description": "Change log for larmoon"
+          },
+          {
+            "name": "remove-premium",
+            "category": "Premium",
+            "aliases": [
+              "removeprem"
+            ],
+            "description": "Hapus premium [Developer only]"
+          },
+          {
+            "name": "activity",
+            "aliases": [
+              "act"
+            ],
+            "category": "General",
+            "description": "Lihat aktifitas/presence dari user!"
+          },
+          {
+            "name": "avatar",
+            "category": "General",
+            "aliases": [
+              "pfp"
+            ],
+            "description": "Lihat avatarmu/user lain"
+          },
+          {
+            "name": "help",
+            "category": "General",
+            "aliases": [
+              "h"
+            ],
+            "description": "Help command"
+          },
+          {
+            "name": "remind-me",
+            "category": "General",
+            "aliases": [
+              "remind"
+            ],
+            "description": "Berikan pesan kepada dirimu untuk masa yg akan datang '_'"
+          },
+          {
+            "name": "set-afk",
+            "category": "General",
+            "aliases": [
+              "afk"
+            ],
+            "description": "AFK, jika ada yang tag kamu, kami akan memberitahu bahwa kamu afk!"
+          },
+          {
+            "name": "ship",
+            "aliases": [
+              "love"
+            ],
+            "description": "Kecocokan hati anjas"
+          },
+          {
+            "name": "user-info",
+            "category": "General",
+            "aliases": [
+              "user"
+            ],
+            "description": "Lihat informasimu / user lain"
+          },
+          {
+            "name": "kiss",
+            "category": "Premium",
+            "aliases": [
+              ""
+            ],
+            "description": "Kisses"
+          },
+          {
+            "name": "premium",
+            "category": "Premium",
+            "aliases": [
+              "prem"
+            ],
+            "description": "Premium account"
+          },
+          {
+            "name": "ping",
+            "category": "General",
+            "description": "Shows ping latecy"
+          },
+          {
+            "name": "set-prefix",
+            "category": "System",
+            "aliases": [
+              "sp",
+              "prefix"
+            ],
+            "description": "Ubah prefix bot"
+          },
+          {
+            "name": "botinfo",
+            "aliases": [
+              "stats"
+            ],
+            "description": "Shows Bot Statistics"
+          }
+        ],
+        "aliases": [
+          "add-premium",
+          "canvas",
+          "kiss",
+          "remove-premium",
+          "activity",
+          "avatar",
+          "help",
+          "remind-me",
+          "set-afk",
+          "ship",
+          "user-info",
+          "premium",
+          "set-prefix",
+          "set-prefix",
+          "botinfo"
+        ],
+        "guild": {
+          "size": 0
+        }
+      }
+    }
+  ]
+}

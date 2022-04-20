@@ -18,4 +18,16 @@ router.get("/topup/:game", (req, res) => {
   }
 });
 
+router.get("/bot", (req, res) => {
+  res.render("discord/bot");
+});
+
+router.get("/bot/:page", (req, res) => {
+  if (req.params.page == "invite") {
+    res.render("discord/invite");
+  } else if (req.params.page == "donate") {
+    res.render("discord/donate");
+  }
+});
+
 module.exports = router;
