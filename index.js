@@ -140,18 +140,6 @@ app.use("/", route);
 app.use("/project", project);
 app.use("/api", api);
 
-app.use("/bot", (req, res) => {
-  res.status(200);
-  // res.send(
-  //   "<h1 style='text-align: center; background-color: red;'>[404] Page not found.</h1>"
-  // );
-
-  var jsp = {
-    user: client.user,
-  };
-  res.json(jsp);
-});
-
 ConnectToMongo();
 client.login(config.token); // bot token
 

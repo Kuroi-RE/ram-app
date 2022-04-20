@@ -4,6 +4,10 @@ const js = require("../client.json");
 // const client = require("../index").client;
 
 router.get("/", (req, res) => {
+  res.send("cloud");
+});
+
+router.get("/bot", (req, res) => {
   const json = [
     {
       status: req.statusCode(200),
@@ -13,7 +17,7 @@ router.get("/", (req, res) => {
   res.json(json);
 });
 
-router.get("/:id", (req, res) => {
+router.get("/bot/:id", (req, res) => {
   if (req.params.id == "commands") {
     res.json(js.bot[0].client.commands);
   } else if (req.params.id == "guilds") {
