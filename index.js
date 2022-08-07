@@ -40,7 +40,7 @@ app.use("/", route);
 app.use("/project", project);
 app.use("/api", api);
 
-app.listen(4000, host, () => {
+app.listen(PORT, host, () => {
   console.log("Server Running at port " + PORT);
 });
 
