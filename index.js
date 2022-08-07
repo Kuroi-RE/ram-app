@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
 const secure = require("ssl-express-www");
 const PORT = process.env.PORT || 4000;
 const host = "0.0.0.0";
@@ -41,13 +40,8 @@ app.use("/", route);
 app.use("/project", project);
 app.use("/api", api);
 
-app.listen(PORT, host, () => {
+app.listen(4000, host, () => {
   console.log("Server Running at port " + PORT);
 });
-
-// module.exports = {
-//   app: app,
-//   client: client,
-// };
 
 module.exports = app;
